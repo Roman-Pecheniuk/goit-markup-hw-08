@@ -1,0 +1,96 @@
+footer{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color:$bgc2-color;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    .container {
+        display: flex;
+        }
+    .contact-list{
+        margin-top: 20px;
+        }
+    .social-networks-item{
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        }
+    .social-icons-svg{
+        fill: #ffffff;
+        }
+}
+
+.footer-contacts{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.footer-subscribe{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.footer-social .title,
+.footer-subscribe .title{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link{
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress{
+    font-style: normal;
+}
+
+.adress-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer-form{
+    display: flex;
+}
+
+.footer-input {
+    width: 358px;
+    padding: 14px 15px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $bgc3-color;
+    background: transparent;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.mailing-icon-svg {
+      margin-left: 10px;
+      width: 24px;
+      height: 24px;
+      fill: $bgc3-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.footer-button.button.primary{
+      align-items: center;
+      display: flex;
+      padding-left: 29px;
+      padding-right: 29px;
+
+
+    &:focus .mailing-icon-svg,
+    &:hover .mailing-icon-svg{
+        fill: $link-color;
+}
+}
