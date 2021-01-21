@@ -173,6 +173,10 @@ a {
   text-transform: uppercase;
 }
 
+header {
+  display: none;
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
