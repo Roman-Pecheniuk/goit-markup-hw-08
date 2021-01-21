@@ -11,9 +11,9 @@
     background-color: $btn2-color;
     text-align: center;
 
-    .list{
-        display: flex;
-    }
+    // .list{
+    //     display: flex;
+    // }
     
     .title{
         text-transform: none;
@@ -31,7 +31,7 @@
         border-radius: 0px 0px 4px 4px;
     }
     .item:not(:last-child){
-        padding-right: 30px;
+        padding-bottom: 30px;
     }
     .text{
         color: $text-color;
@@ -45,6 +45,7 @@
 }
 
 .team-card img{
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -83,5 +84,90 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+// desktop
 
+// .features .text,
+// .projects-list .text{
+//     color: $text-color;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;  
+// }
+
+// .team{
+//     background-color: $btn2-color;
+//     text-align: center;
+
+//     .list{
+//         display: flex;
+//     }
+    
+//     .title{
+//         text-transform: none;
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 1.18;
+//     }
+//     .team-card{
+//         background-color: $bgc3-color;
+//         margin-left: 0;
+//         margin-right: 0;
+//         padding-bottom: 30px;
+//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//         0px 2px 1px rgba(0, 0, 0, 0.2);
+//         border-radius: 0px 0px 4px 4px;
+//     }
+//     .item:not(:last-child){
+//         padding-right: 30px;
+//     }
+//     .text{
+//         color: $text-color;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 1.18;
+//         margin-top: 0;
+//         margin-bottom: 16px;
+//     }
+// }
+
+// .team-card img{
+//     margin-bottom: 30px;
+// }
+
+// .social-networks{
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .social-networks-item:not(:last-child) {
+//     margin-right: 10px;
+//   }
+
+// .social-networks-link{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//         &:hover,
+//         &:focus{
+//         background-color: $link-color;
+//     }
+//         &:hover .social-icons-svg,
+//         &:focus .social-icons-svg {
+//         fill: #ffffff;
+//     }
+// }
+
+// .social-icons-svg{
+//     width: 20px;
+//     height: 20px;
+//     fill: $social-networks-icons;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
