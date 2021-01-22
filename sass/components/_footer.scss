@@ -8,6 +8,9 @@ footer{
 
     .contact-list{
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         }
     .social-networks-item{
         background: rgba(255, 255, 255, 0.1);
@@ -16,6 +19,9 @@ footer{
     .social-icons-svg{
         fill: #ffffff;
         }
+        .footer-contacts{
+            margin-bottom: 60px;
+       }
 }
 
 .footer-social .title,
@@ -23,6 +29,10 @@ footer{
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.footer-social{
+    margin-bottom: 60px;
 }
 
 .link{

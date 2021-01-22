@@ -79,6 +79,10 @@ a {
   }
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .section-title {
   color: #212121;
   text-align: center;
@@ -549,7 +553,6 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -15px;
   }
 }
 
@@ -1114,6 +1117,16 @@ footer {
 
 footer .contact-list {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .social-networks-item {
@@ -1125,11 +1138,19 @@ footer .social-icons-svg {
   fill: #ffffff;
 }
 
+footer .footer-contacts {
+  margin-bottom: 60px;
+}
+
 .footer-social .title,
 .footer-subscribe .title {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.footer-social {
+  margin-bottom: 60px;
 }
 
 .link {
