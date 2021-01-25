@@ -4,13 +4,21 @@ footer{
     background-color:$bgc2-color;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-align: center;
 
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    .container {
+        @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+        }
+    }
     .contact-list{
         margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         }
     .social-networks-item{
         background: rgba(255, 255, 255, 0.1);
@@ -19,9 +27,30 @@ footer{
     .social-icons-svg{
         fill: #ffffff;
         }
-        .footer-contacts{
-            margin-bottom: 60px;
-       }
+}
+
+.adress-item{
+    font-style: normal;
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+.footer-contacts{
+        @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+        @media screen and (min-width: 1200px) {
+        margin-right: 80px;
+    }
+}
+
+.footer-subscribe{
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        width: 570px;
+    }
 }
 
 .footer-social .title,
@@ -32,7 +61,9 @@ footer{
 }
 
 .footer-social{
-    margin-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
 }
 
 .link{
@@ -40,24 +71,22 @@ footer{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress{
-    display: flex;
-    font-style: normal;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    .adress-item:not(:last-child){
-        margin-bottom: 9px;
-    }
+.adress-item:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .footer-form{
-    flex-direction: column;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    }
 }
 
 .footer-input {
-    width: 450px;
+    width: 358px;
     padding: 14px 15px;
+    // margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     font-size: 16px;
@@ -65,13 +94,24 @@ footer{
     letter-spacing: 0.03em;
     color: $bgc3-color;
     background: transparent;
-    margin-bottom: 20px;
 
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
     }
 }
 
@@ -84,22 +124,17 @@ footer{
   }
 
 .footer-button.button.primary{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        display: flex;
-        padding-left: 29px;
-        padding-right: 29px;
-        margin-left: auto;
-        margin-right: auto;
-       
+      align-items: center;
+      display: flex;
+      padding-left: 29px;
+      padding-right: 29px;
+
+
     &:focus .mailing-icon-svg,
     &:hover .mailing-icon-svg{
         fill: $link-color;
 }
 }
-
-// desktop
 
 // footer{
 //     padding-bottom: 60px;
