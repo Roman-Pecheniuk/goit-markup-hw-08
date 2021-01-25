@@ -4,7 +4,7 @@
         }
 }
 
-.feature-list {
+.features .feature-list {
     @media screen and (min-width: 768px) {
       display: flex;
       margin: -15px;
@@ -57,33 +57,3 @@
 .icon-diagram::before{
     background-image: url(../images/icons/diagram.svg);
 }
-
-// desktop
-
-// .features .feature-item{
-//     width: 270px;
-// }
-
-// .feature-list{
-//     display: flex;
-// }
-
-// .feature-item{
-
-//     &:not(:last-child) {
-//     margin-right: 30px;
-//     }
-
-//     &:before{
-//         content: '';
-//         display: block;
-//         height: 120px;
-//         width: 270px;
-//         background-color: $btn2-color;
-//         background-repeat: no-repeat;
-//         background-position: center;
-//         background-size: 70px 70px;
-//         margin-bottom: 30px;
-//         border-radius: 4px;
-//     }
-// }
