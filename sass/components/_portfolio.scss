@@ -72,15 +72,8 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
     }
 }
-
-// .card-img{
-//     display: block;
-//     width: 100%;
-//     height: auto;
-// }
 
 .project-item{
     display: inline-block;
@@ -97,6 +90,10 @@
 .project-item-img{
     position: relative;
     overflow: hidden;
+    img{
+        width: 100%;
+    }
+    
 }
 
 .overlay{
@@ -155,10 +152,16 @@
 
 .project-description{
     padding: 20px 24px;
-
-    .title,
-    .text{
-    margin-top: 0;
-    margin-bottom: 0;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        padding: 20px 18px;
     }
+
+    .title{
+        margin-top: 0;
+        margin-bottom: 4px;
+        }
+    .text{
+        margin-top: 0;
+        margin-bottom: 0;
+        }
 }
