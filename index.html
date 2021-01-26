@@ -11,8 +11,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="main-nav container">
+        <div class="main-nav container header-container">
         <a href="#"><img src="./images/logo-header.svg" alt="logo"></a>
+        
+        <button type="button" class="btn mobile-menu-btn" aria-expanded="false" aria-controls="header-menu" data-menu-button>
+            <svg class="mobile-menu-svg" width="40px" height="40px" aria-label="Кнопка мобильного меню">
+            <use class="icon-menu-open" href="../images/icons/sprite.svg#icon-menu"></use>
+            <use class="icon-menu-close" href="../images/icons/sprite.svg#icon-close_menu"></use>
+            </svg>
+        </button>
+        
         <nav>
             <ul class="list nav-list">
                 <li class="item"><a href="./index.html" class="link current">Студия</a></li>
