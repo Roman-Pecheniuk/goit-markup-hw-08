@@ -295,13 +295,13 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .nav-list.item.link:not(:last-child) {
+  .nav-list.item:not(:last-child) {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-list.item.link:not(:last-child) {
+  .nav-list.item:not(:last-child) {
     margin-right: 50px;
   }
 }
