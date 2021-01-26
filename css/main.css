@@ -857,8 +857,60 @@ h1 {
   background-image: url(../images/icons/diagram.svg);
 }
 
-.work {
+.service {
   display: none;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    display: block;
+  }
+}
+
+.work {
+  padding-top: 0;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work .item {
+  position: relative;
+}
+
+.work .item {
+  position: relative;
+}
+
+.work .title {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .features .text,
