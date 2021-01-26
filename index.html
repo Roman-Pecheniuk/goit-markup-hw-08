@@ -11,15 +11,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="main-nav container">
+        <div class="container header-container">
         <a href="#"><img src="./images/logo-header.svg" alt="logo"></a>
-        <nav>
-            <ul class="list nav-list">
-                <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li class="item"><a href="#" class="link">Контакты</a></li>
-            </ul>
-        </nav>
+        
+            <button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="header-menu" data-menu-button>
+                <svg class="mobile-menu-svg" width="40px" height="40px" aria-label="Кнопка выпадающего меню">
+                <use class="icon-menu-open" href="./images/icons/sprite.svg#icon-menu"></use>
+                <use class="icon-menu-close" href="./images/icons/sprite.svg#icon-close_menu"></use>
+                </svg>
+            </button>
+            
+            <div class="header-menu" id="header-menu" data-menu>
+            <nav class="main-nav">
+                <ul class="list nav-list">
+                    <li class="item"><a href="./index.html" class="link nav-link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link nav-link">Портфолио</a></li>
+                    <li class="item"><a href="#" class="link nav-link">Контакты</a></li>
+                </ul>
+            </nav>
             <ul class="list contact-list">
                 <li class="item"><a href="mailto:info@devstudio.com" class="link">
                     <svg class="nav-icons-svg" width="16" height="12">
@@ -32,6 +41,7 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -403,6 +413,7 @@
                 </form>
             </div>
         </div>
+        <script src="./js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>
